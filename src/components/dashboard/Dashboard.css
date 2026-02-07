@@ -1,0 +1,204 @@
+/* Stats Card */
+.stats-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.stats-title {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.stats-icon {
+    color: var(--color-primary);
+    opacity: 0.8;
+}
+
+.stats-value-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.stats-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.stats-unit {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.stats-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+}
+
+.stats-change {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    font-weight: 600;
+}
+
+.stats-change.positive {
+    color: var(--color-success);
+}
+
+.stats-change.negative {
+    color: var(--color-danger);
+}
+
+.stats-change.neutral {
+    color: var(--color-text-muted);
+}
+
+.stats-subtext {
+    color: var(--color-text-muted);
+}
+
+/* Chart Card */
+.chart-card {
+    padding-bottom: 1rem;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.chart-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.chart-actions {
+    display: flex;
+    gap: 0.5rem;
+    background-color: var(--color-bg);
+    padding: 0.25rem;
+    border-radius: var(--radius-md);
+}
+
+.badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    transition: all 0.2s;
+}
+
+.badge:hover {
+    color: var(--color-text);
+}
+
+.badge.active {
+    background-color: var(--color-bg-secondary);
+    /* A bit lighter or primary */
+    background-color: #2D3748;
+    color: var(--color-text);
+}
+
+/* Recent Activity */
+.activity-card {
+    height: 100%;
+}
+
+.activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.activity-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    color: var(--color-text);
+}
+
+.activity-info {
+    flex: 1;
+}
+
+.activity-title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: block;
+}
+
+.activity-date {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.activity-amount {
+    font-weight: 600;
+}
+
+.activity-amount.positive {
+    color: var(--color-success);
+}
+
+.activity-amount.negative {
+    color: var(--color-text);
+}
+
+/* Should not happen often for earnings, but maybe withdrawals */
+
+/* Dashboard Layout */
+.dashboard-container {
+    padding: 2rem 0;
+}
+
+.dashboard-header {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-greeting h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.dashboard-greeting p {
+    color: var(--color-text-muted);
+}

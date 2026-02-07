@@ -1,0 +1,19 @@
+.card {
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-border);
+    /* Subtle hover defaults, can be overridden */
+}
+
+.card-hover-highlight:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-glow);
+}
